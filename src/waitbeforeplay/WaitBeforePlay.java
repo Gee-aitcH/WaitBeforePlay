@@ -75,8 +75,9 @@ public class WaitBeforePlay extends GHPlugin {
         }
 
         if (newPlayers.add(player)){
-            msg(pass, f("Welcome, %s%s. Since you are a new player, you are only allowed to move and chat for now. " +
-                            "But no worries! You will be able to do much more after being here for %s more minutes from now!",
+            msg(pass, f("[red][WARNING!] [white]Welcome, %s%s. Since you are a new player, you are in spectator mode, but no worries! In %s minutes you'll be able to play! " +
+                            "Why there's this timer? It's due to the high amount of griefers, and even if we know it's really boring wait it will be worth a better gameplay! " +
+                        "And if you wonder, you'll just need to wait once and no more so be patience!",
                     player.name, pass, (int) Math.ceil(cfg().minsBeforePlaying - playtime.totalPlayTime / 60 / 60)), player);
             Team emptyTeam = Seq.with(Team.all).find(t -> t.cores().size == 0);
             newPlayers.forEach(p -> p.team(emptyTeam));
