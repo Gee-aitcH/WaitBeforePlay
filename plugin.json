@@ -1,7 +1,7 @@
 {
-  "name": "ExampleGHPlugin",
+  "name": "WaitBeforePlay",
   "author": "(G_H)",
-  "main": "exampleghplugin.ExampleGHPlugin",
-  "description": "An example plugin with the application of GH's plugin utils.",
+  "main": "waitbeforeplay.WaitBeforePlay",
+  "description": "Wait Before Play.",
   "version": 1.1
 }
